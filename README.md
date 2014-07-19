@@ -35,3 +35,25 @@ pip freeze > requirements.txt
 [Everything Jeff Knupp knows about Python...](http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/)
 
 [Some other intro](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/)
+
+### Fix Sphynx error
+
+To fix error on sphynx runs add to .bashrc
+
+```
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+
+
+### To use non-latin UTF-8 characters in source code
+
+Add special comment to source file
+
+```
+#!/usr/bin/env python
+# -*- coding: utf8 -*-
+
+print "Хай"
+```
+
